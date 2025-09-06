@@ -1,10 +1,6 @@
-const dotenv = require('dotenv');
-dotenv.config();
+require("dotenv").config();
 
-
-// console.log(process.env.PORT);
-
-module.export = {
+module.exports = {
     PORT: process.env.PORT
 };
 
