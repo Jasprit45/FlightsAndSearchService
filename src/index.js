@@ -10,8 +10,10 @@ const setupAndStartServer  = async() => {
 
     //create the express object
     const app = express();
+// hai 
 
     app.use(bodyParser.json());
+
     app.use(bodyParser.urlencoded({extended:true}));
 
     app.use('/api' ,ApiRoutes);
