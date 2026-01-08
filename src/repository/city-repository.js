@@ -3,7 +3,7 @@ const {City} = require('../models/index');
 //modal name singular
 //table name plural
 
-class Cityrepository {
+class CityRepository {
     async createCity({name}) {//{name:"delhi"}
         try{
             const city = await City.create({
@@ -55,4 +55,4 @@ class Cityrepository {
 } 
 
 
-module.exports = Cityrepository;
+module.exports = CityRepository;
