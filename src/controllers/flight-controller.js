@@ -6,11 +6,11 @@ const create = async (req,res) => {
     try {
         const flightRequestData = {
             flightNumber: req.body.flightNumber,
-            airplanId: req.body.airplanId,
+            airplaneId: req.body.airplaneId,
             departureAirportId: req.body.departureAirportId,
             arrivalAirportId: req.body.arrivalAirportId,
             arrivalTime: req.body.arrivalTime,
-            depatureTime: req.body.depatureTime,
+            departureTime: req.body.departureTime,
             price: req.body.price
         }
 
