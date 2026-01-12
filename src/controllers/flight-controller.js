@@ -11,7 +11,7 @@ const create = async (req,res) => {
             arrivalAirportId: req.body.arrivalAirportId,
             arrivalTime: req.body.arrivalTime,
             departureTime: req.body.departureTime,
-            price: req.body.price
+            price: req.body.price 
         }
 
         const flight = await flightService.createFlight(flightRequestData);
