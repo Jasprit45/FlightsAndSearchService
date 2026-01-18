@@ -82,14 +82,21 @@ class FlightRepository{
         }
     }
 
+    async updateFlights(flightId,data) {
+        try {
+            await Flights.update(data, {
+                where: {
+                    id: flightId,
+                }
+            });
+            return true;
+        } catch (error) {
+            throw {error}
+        }
+    }
+
 }
 
 module.exports = FlightRepository;
 
-/*
-{
-    where: {
-        arrivalAirportId:2
-    }
-}
- */
+
